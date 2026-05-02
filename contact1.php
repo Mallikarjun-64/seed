@@ -39,26 +39,50 @@
         }
 
         .contact-info {
-            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
             padding: 20px;
-            border-radius: 10px;
         }
 
         .member {
-            border: 1px solid #ddd;
-            padding: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 15px;
-            border-radius: 8px;
-            background: #f9f9f9;
+            border: 3px solid #2ecc71;
         }
 
         .member h3 {
             color: #27ae60;
             margin-bottom: 10px;
+            font-size: 22px;
         }
 
-        p {
+        .member p {
             margin: 5px 0;
+            color: #444;
+            font-size: 14px;
+        }
+
+        .member strong {
+            color: #2c3e50;
         }
     </style>
 </head>
@@ -69,33 +93,35 @@
 
     <div class="container">
 
-        <h2>Contact Information</h2>
+        <h2>Team Members</h2>
 
         <div class="contact-info">
 
             <div class="member">
-                
-                <p><strong>Name:</strong>Shrushti Chikkorde</p>
-                <p><strong>Address:</strong>Gokak</p>
-                <p><strong>Email:</strong>shrushtichikkorde@gmail.com</p>
+                <img src="shrusti.png" alt="Shrushti">
+                <h3>Shrushti Chikkorde</h3>
+                <p><strong>Address:</strong> Gokak</p>
+                <p><strong>Email:</strong> chikkordeshrushti@gmail.com</p>
                 <p><strong>Phone:</strong> 9876543210</p>
             </div>
 
-            <div class="member">
-                
-                <p><strong>Name:</strong>Neekita Patil</p>
-                <p><strong>Address:</strong>Gokak</p>
-                <p><strong>Email:</strong>neekitapatil12@gmail.com</p>
-                <p><strong>Phone:</strong> 9876543211</p>
+              <div class="member">
+                <img src="anjali.jpeg" alt="Anjali">
+                <h3>Anjali Kabadagi</h3>
+                <p><strong>Address:</strong> Gokak</p>
+                <p><strong>Email:</strong> anjalikabadgi@gmail.com</p>
+                <p><strong>Phone:</strong> 9876543212</p>
             </div>
 
             <div class="member">
-               
-                <p><strong>Name:</strong>Anjali Kabadgi</p>
-                <p><strong>Address:</strong>Gokak</p>
-                <p><strong>Email:</strong>anjalikabadgi@gmail.com</p>
-                <p><strong>Phone:</strong> 9876543212</p>
+                <img src="nikita.png" alt="Neekita">
+                <h3>Neekita Patil</h3>
+                <p><strong>Address:</strong> Gokak</p>
+                <p><strong>Email:</strong> neekitapatil12@gmail.com</p>
+                <p><strong>Phone:</strong> 9876543211</p>
             </div>
+
+          
 
         </div>
 
