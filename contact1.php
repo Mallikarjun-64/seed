@@ -110,7 +110,7 @@
                 <h3>Mallikarjun Kadagoudra</h3>
                 <p><strong>Address:</strong> Gokak</p>
                 <p><strong>Email:</strong> kaf@gmail.com</p>
-                <p><strong>Phone:</strong> 988789797212</p>
+                <p><strong>Phone:</strong> 98878979</p>
             </div>
 <!-- 
             <div class="member">
