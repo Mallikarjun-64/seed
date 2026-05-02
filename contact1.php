@@ -97,29 +97,29 @@
 
         <div class="contact-info">
 
-            <div class="member">
+            <!-- <div class="member">
                 <img src="shrusti.png" alt="Shrushti">
                 <h3>Shrushti Chikkorde</h3>
                 <p><strong>Address:</strong> Gokak</p>
                 <p><strong>Email:</strong> chikkordeshrushti@gmail.com</p>
                 <p><strong>Phone:</strong> 9876543210</p>
-            </div>
+            </div> -->
 
               <div class="member">
                 <img src="anjali.jpeg" alt="Anjali">
-                <h3>Anjali Kabadagi</h3>
+                <h3>Mallikarjun Kadagoudra</h3>
                 <p><strong>Address:</strong> Gokak</p>
-                <p><strong>Email:</strong> anjalikabadgi@gmail.com</p>
-                <p><strong>Phone:</strong> 9876543212</p>
+                <p><strong>Email:</strong> kaf@gmail.com</p>
+                <p><strong>Phone:</strong> 988789797212</p>
             </div>
-
+<!-- 
             <div class="member">
                 <img src="nikita.png" alt="Neekita">
                 <h3>Neekita Patil</h3>
                 <p><strong>Address:</strong> Gokak</p>
                 <p><strong>Email:</strong> neekitapatil12@gmail.com</p>
                 <p><strong>Phone:</strong> 9876543211</p>
-            </div>
+            </div> -->
 
           
 
