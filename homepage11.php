@@ -13,53 +13,23 @@
 
         body {
             height: 100vh;
+            padding-top: 0 !important;
             background: url(https://images.stockcake.com/public/3/0/b/30b611d8-ff74-4d5c-aedf-78972c953265_large/hands-holding-seeds-stockcake.jpg) no-repeat center center/cover;
         }
 
         /* Overlay effect */
         .overlay {
-            height: 100%;
+            min-height: 100vh;
             width: 100%;
             background: rgba(0, 0, 0, 0.6);
-        }
-
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 50px;
-            background: rgba(0, 0, 0, 0.7);
-        }
-
-        .navbar h1 {
-            color: #2ecc71;
-        }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-        }
-
-        .navbar ul li {
-            margin-left: 20px;
-        }
-
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .navbar ul li a:hover {
-            color: #2ecc71;
+            padding-top: 80px;
         }
 
         /* Center Content */
         .content {
             text-align: center;
             color: white;
-            position: relative;
-            top: 35%;
+            padding-top: 20vh;
         }
 
         .content h2 {
@@ -80,6 +50,8 @@
             font-size: 18px;
             cursor: pointer;
             border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -87,6 +59,7 @@
         }
     </style>
 </head>
+<body>
 
 <?php session_start(); include 'navbar.php'; ?>
 <div class="overlay">

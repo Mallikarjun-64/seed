@@ -21,11 +21,20 @@ $result = $conn->query($sql);
             background: linear-gradient(to right, #dff9fb, #c7ecee);
             margin: 0;
             padding: 0;
+            padding-top: 0 !important;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.4); /* Lighter overlay for the gradient background */
+            padding-top: 80px;
+            width: 100%;
         }
 
         .container {
             width: 80%;
-            margin: 50px auto;
+            margin: 0 auto;
             background: white;
             padding: 20px;
             border-radius: 12px;
@@ -86,9 +95,10 @@ $result = $conn->query($sql);
         }
     </style>
 </head>
-<?php include 'navbar.php'; ?>
 <body>
+<?php include 'navbar.php'; ?>
 
+<div class="overlay">
 <div class="container">
 
     <h2>Seed Inventory List</h2>
@@ -119,6 +129,8 @@ $result = $conn->query($sql);
     <?php } ?>
 
     <a class="btn" href="addseed1.php">Add New Seed</a>
+
+</div>
 
 </div>
 

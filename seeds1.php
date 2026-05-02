@@ -34,13 +34,20 @@ if(isset($_POST['submit'])){
         body {
             font-family: Arial;
             background: #eafaf1;
-
-            /* ✅ Added background image */
+            padding-top: 0 !important;
             background-image: url('https://static.vecteezy.com/system/resources/thumbnails/004/850/867/small_2x/collage-various-beans-mix-peas-agriculture-of-natural-healthy-food-for-cooking-ingredients-box-of-different-whole-grains-beans-and-legumes-seeds-lentils-and-nuts-colorful-snack-texture-background-free-photo.JPG');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            padding-top: 80px;
+            width: 100%;
         }
 
         .container {
@@ -113,9 +120,10 @@ if(isset($_POST['submit'])){
         }
     </style>
 </head>
-<?php include 'navbar.php'; ?>
 <body>
+<?php include 'navbar.php'; ?>
 
+<div class="overlay">
 <div class="container">
 
     
@@ -187,6 +195,8 @@ if(isset($_POST['submit'])){
         ?>
 
     </table>
+
+</div>
 
 </div>
 

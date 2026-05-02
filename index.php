@@ -39,31 +39,18 @@ elseif($page=="explore"){
 
 body{
     min-height:100vh;
+    padding-top: 0 !important;
     background:url('<?php echo $bg; ?>') no-repeat center/cover;
+    background-attachment: fixed;
 }
 
 /* Overlay */
 .overlay{
     min-height:100vh;
     background:rgba(0,0,0,0.6);
+    padding-top: 80px;
 }
 
-/* NAVBAR */
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    padding:15px 50px;
-    background:rgba(0,0,0,0.7);
-}
-.navbar h1{color:#2ecc71;}
-.navbar ul{display:flex;list-style:none;}
-.navbar ul li{margin-left:20px;}
-.navbar ul li a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-}
-.navbar ul li a:hover{color:#2ecc71;}
 
 /* HOME */
 .content{

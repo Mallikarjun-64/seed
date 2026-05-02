@@ -6,15 +6,18 @@
 
     <style>
         body {
-            height: 100vh;
-           
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 0 !important;
+            font-family: Arial, sans-serif;
+            background: url('https://images.stockcake.com/public/3/0/b/30b611d8-ff74-4d5c-aedf-78972c953265_large/hands-holding-seeds-stockcake.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
         }
 
-        /* Overlay */
         .overlay {
-            background: rgba(0, 0, 0, 0.6);
             min-height: 100vh;
-            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            padding-top: 80px;
         }
 
         .container {
@@ -30,11 +33,11 @@
         }
 
         .section {
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.95);
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px #ccc;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
         }
 
         h2 {
@@ -55,12 +58,13 @@
         }
     </style>
 </head>
-<?php include 'navbar.php'; ?>
 <body>
+<?php include 'navbar.php'; ?>
 
-<div class="container">
-
-    <h1>About Seed Inventory Management System</h1>
+<div class="overlay">
+    <div class="container">
+        <h1>About Seed Inventory Management System</h1>
+        <!-- Content remains the same -->
 
     <!-- Introduction -->
     <div class="section">
@@ -123,6 +127,8 @@
             <li>Anjali Kabadgi</li>
         </ul>
     </div>
+
+</div>
 
 </div>
 

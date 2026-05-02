@@ -13,8 +13,10 @@
         }
 
         body {
-            height: 100vh;
+            min-height: 100vh;
+            padding-top: 0 !important;
             background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkeRupWVdyL9zC5NIKGTuL9Mn4c7IWe9jSA&s') no-repeat center center/cover;
+            background-attachment: fixed;
         }
 
         /* Overlay */
@@ -22,6 +24,7 @@
             background: rgba(0, 0, 0, 0.6);
             min-height: 100vh;
             padding: 30px;
+            padding-top: 80px;
         }
 
         .container {
@@ -59,8 +62,8 @@
         }
     </style>
 </head>
-<?php include 'navbar.php'; ?>
 <body>
+<?php include 'navbar.php'; ?>
 
 <div class="overlay">
 

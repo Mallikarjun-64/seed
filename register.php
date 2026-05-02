@@ -48,14 +48,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <style>
 body{
   margin:0;
+  padding-top: 0 !important;
   font-family:Arial;
   background:url('https://www.taropumps.com/media/2538/type-of-seeds-2.jpg') center/cover no-repeat;
 }
 
 .container{
-  height:100vh;
+  min-height:100vh;
   width:100%;
   background:rgba(0,0,0,0.6);
+  padding-top: 80px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -108,8 +110,8 @@ button:hover {
 </style>
 
 </head>
-<?php include 'navbar.php'; ?>
 <body>
+<?php include 'navbar.php'; ?>
 
 <div class="container">
   <div class="form">

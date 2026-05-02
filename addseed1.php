@@ -31,16 +31,23 @@ if (isset($_POST['submit'])) {
         body {
             margin: 0;
             padding: 0;
+            padding-top: 0 !important;
             font-family: Arial, sans-serif;
-
-            /* 🌱 Background Image */
             background: url('https://media.licdn.com/dms/image/v2/C5612AQHvumAKTUVbqg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1623501422702?e=2147483647&v=beta&t=d0mC8IFQmGbZp71FC_M2KkUydbsNM1ZAW6ZNPQtertc') no-repeat center center/cover;
-            height: 100vh;
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            padding-top: 80px;
+            width: 100%;
         }
 
         .form-container {
             width: 350px;
-            margin: 100px auto;
+            margin: 50px auto;
             padding: 30px;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -74,9 +81,10 @@ if (isset($_POST['submit'])) {
         }
     </style>
 </head>
-<?php include 'navbar.php'; ?>
 <body>
+<?php include 'navbar.php'; ?>
 
+<div class="overlay">
 <div class="form-container">
     <h2>Add Seeds</h2>
 
@@ -87,6 +95,8 @@ if (isset($_POST['submit'])) {
 
         <button type="submit" name="submit">Add Seed</button>
     </form>
+</div>
+
 </div>
 
 </body>
